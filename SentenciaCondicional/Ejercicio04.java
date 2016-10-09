@@ -12,9 +12,11 @@ public class Ejercicio04 {
     int horas = Integer.parseInt(System.console().readLine());
     int sueldoSemanal;
     
-    if (horas < 40) {
+    if (horas < 40) { // Si hubiera trabajado menos de 40horas las cobraría a 12 euros
       sueldoSemanal = 12 * horas;
-      } else if (horas > 40)
-      sueldoSemanal = (40 * 12) + ((horas - 40) * 16);
-    }
+      } else {
+      sueldoSemanal = (40 * 12) + ((horas - 40) * 16); // En caso de que hubiera estado mas de 40horas
+    }                                                  // empezaría a cobrarlas a partir de ahí a 16 euros
+      System.out.println("El sueldo semanal que recibes es de : \n" + sueldoSemanal + "€" );
+  }
 }
