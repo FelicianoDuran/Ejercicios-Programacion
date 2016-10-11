@@ -3,9 +3,9 @@
  *
  * @author Feliciano Durán
  */
-
-public class Ejercicio01 {
-  public static void main(String[] args) {   
+ public class Ejercicio01 {
+  public static void main(String[] args) {  
+    
     String dia;
     System.out.print("Introduzca un día de la semana para saber la primera asignatura:(L)(M)(X)(J)(V) ");
     dia = (System.console().readLine());
@@ -21,13 +21,13 @@ public class Ejercicio01 {
       System.out.println("Programación");
       break;
     case "X":
-      System.out.println("Sistemas informáticos");
-      break;
-    case "J":
       System.out.println("Programación");
       break;
-    case "V":
+    case "J":
       System.out.println("Base de datos");
+      break;
+    case "V":
+      System.out.println("Lenguaje de marcas");
       break;
     default:
       dia = "Ha introducido mal el día";
