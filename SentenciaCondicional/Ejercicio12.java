@@ -105,7 +105,30 @@ public class  Ejercicio12 {
        if (solucion.equals("B")); {
         puntos++;
       }
-
+      
+      System.out.println("9. ¿Cual de los siguientes formato esta escrito en lowerCamelCase ");
+      System.out.println("A -> programandoEnJava ");
+      System.out.println("B -> programandoEnjava ");
+      System.out.println("C -> ProgramandoEnJava ");
+      System.out.println("--------------------");
+      System.out.print(" → ");
+      solucion = System.console().readLine();
+       if (solucion.equals("A")); {
+        puntos++;
+      }
+      
+      
+      System.out.println("10. ¿Que ocurre si ponemos rm -Rf multimedia_copia/ ");
+      System.out.println("A -> No se puede borrar porque es un directorio ");
+      System.out.println("B -> Antes de eliminar el directorio te pregunta (s/n) ");
+      System.out.println("C -> Eliminar el directorio sin preguntarte antes ");
+      System.out.println("--------------------");
+      System.out.print(" → ");
+      solucion = System.console().readLine();
+       if (solucion.equals("C")); {
+        puntos++;
+       }
+      
       
    System.out.println("  Ha obtenido " + puntos + " puntos.");
    } 
