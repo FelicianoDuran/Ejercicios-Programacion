@@ -20,7 +20,7 @@ public class Ejercicio15 {
     System.out.println("1  Con el vértice hacia arriba");
 		System.out.println("2  Con el vértice hacia abajo");
 		System.out.println("3  Con el vértice hacia la izquierda");
-		System.out.println("4 Con el vértice hacia la derecha");
+		System.out.println("4  Con el vértice hacia la derecha");
     
     int opcion = Integer.parseInt(System.console().readLine());
     

@@ -33,7 +33,10 @@
      case "7":
         System.out.println("Domingo");
         break;
+        
+        
+        
      
-     }
+    }
   } 
 }

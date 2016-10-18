@@ -1,7 +1,7 @@
 /**
- * 4. Sentencia Condicional
+ *     Sentencia Condicional
  *
- * 12. Realiza un minicuestionario con 10 preguntas tipo test sobre las
+ *     Realiza un minicuestionario con 10 preguntas tipo test sobre las
  *     asignaturas que se imparten en el curso. Cada pregunta acertada
  *     sumará un punto. El programa mostrará al final la califcación
  *     obtenida. Pásale el minicuestionario a tus compañeros y pídeles
@@ -38,7 +38,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("A")); {
+       if (solucion.equals("A")) {
         puntos++;
       }
       
@@ -59,7 +59,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("A")); {
+       if (solucion.equals("A")) {
         puntos++;
       }
       
@@ -70,7 +70,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("A")); {
+       if (solucion.equals("A")) {
         puntos++;
       }
       
@@ -81,7 +81,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("C")); {
+       if (solucion.equals("C")) {
         puntos++;
       }
       
@@ -92,7 +92,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("A")); {
+       if (solucion.equals("A")) {
         puntos++;
       }
 
@@ -102,7 +102,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("B")); {
+       if (solucion.equals("B")) {
         puntos++;
       }
       
@@ -113,7 +113,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("A")); {
+       if (solucion.equals("A")) {
         puntos++;
       }
       
@@ -125,7 +125,7 @@ public class  Ejercicio12 {
       System.out.println("--------------------");
       System.out.print(" → ");
       solucion = System.console().readLine();
-       if (solucion.equals("C")); {
+       if (solucion.equals("C")) {
         puntos++;
        }
       
