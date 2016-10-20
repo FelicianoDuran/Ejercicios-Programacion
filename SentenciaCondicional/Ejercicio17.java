@@ -11,6 +11,6 @@ public class Ejercicio17 {
     
     System.out.print("Introduzca un número entero: ");
     int n = Integer.parseInt(System.console().readLine());
-    System.out.println("La última cifra de dicho número es = " + (n % 10));
+      System.out.println("La última cifra de dicho número es = " + (n % 10));
   }
 }

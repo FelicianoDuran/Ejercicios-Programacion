@@ -13,17 +13,17 @@ public class Ejercicio14 {
     System.out.print("= ");
     double x = Double.parseDouble(System.console().readLine());
     
-   if (x%2 == 0) {
+    if (x%2 == 0) {
       System.out.println("Su número es par");
-     } else {
+      } else {
        System.out.println("Su número es impar");
-      }
+       }
   
     if (x%5 == 0) {
       System.out.println("Su número es divisible entre 5");
-    } else {
+      } else {
       System.out.println("Su número no es divisible entre 5");
-    }
+       }
       
-    }
   }
+}
