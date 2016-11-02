@@ -11,10 +11,10 @@ public class Ejercicio08 {
     
     System.out.print("Este programa muestra la tabla de multiplicar de un número introducido: ");
     Scanner numero = new Scanner(System.in);
-    int numeroIntroducido = Integer.parseInt(System.console().readLine());
+    int numeroIntroducido = Integer.parseInt(numero.nextLine());
         
     for (int i = 0; i <= 10; i++) {
-      System.out.println(numeroIntroducido + " x " + i + " = " + numeroIntroducido * i);
+      System.out.println(numeroIntroducido + "x" + i + " => " + numeroIntroducido * i);
     }
 
   }
