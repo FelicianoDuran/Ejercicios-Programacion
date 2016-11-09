@@ -28,13 +28,13 @@ public class Ejercicio15 {
       case 1:
         System.out.println("   " + x );
         System.out.println("  " + x + x + x);
-        System.out.println(" " + x + x + x+ x);
-        System.out.println(x + x + x + x + x + x);
+        System.out.println(" " + x + x + x+ x + x);
+        System.out.println(x + x + x + x + x + x + x);
         break;
 			case 2:
-        System.out.println(x + x + x + x + x + x);
-        System.out.println(" " + x + x + x + x);
-        System.out.println("  " + x + x);
+        System.out.println(x + x + x + x + x + x + x);
+        System.out.println(" " + x + x + x + x + x);
+        System.out.println("  " + x + x + x);
         System.out.println("   " + x);
         break;
 			case 3:
