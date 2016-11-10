@@ -24,7 +24,7 @@ public class Ejercicio10 {
     do {
       System.out.print("\nIntroduzca un número: ");
       numero = Integer.parseInt(s.nextLine());
-      if (numero >0) {
+      if ((numero % 2 !=  0) && (numero > 0)) {
         cuenta +=numero;
       
       contador ++;}
