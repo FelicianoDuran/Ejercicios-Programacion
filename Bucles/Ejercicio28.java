@@ -12,7 +12,7 @@ import java.util.Scanner;
   Scanner s =new Scanner(System.in);
     
     int factorial=1;
-    System.out.println("Ingrese un numero");
+    System.out.println("Introduzca un numero y calculará su factorial: ");
     int numeroIntroducido=s.nextInt();
 
     for(int i = numeroIntroducido; i > 1; i--){
