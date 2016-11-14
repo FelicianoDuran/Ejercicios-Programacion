@@ -17,7 +17,7 @@ public class Ejercicio20 {
     String caracter = System.console().readLine();
     
     int altura = 1;
-    int i = 0;
+    int i = 1;
     int espacios = alturaIntroducida-1;
     
     while (altura <= alturaIntroducida) {
