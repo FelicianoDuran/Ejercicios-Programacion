@@ -49,14 +49,9 @@ public class Ejercicio15 {
 
         default:
         
-      }
-      System.out.print(almacenar + " ");
+        }System.out.print(almacenar + " ");
+        
       
-      if ( contadorNotas == notas ) {
-        System.out.print("||");
-      } else if ( contadorNotas % 4 == 0 ) {
-        System.out.print("| ");
-      }
-    }
-  }
+    }  System.out.print("||");
+  }   
 }
