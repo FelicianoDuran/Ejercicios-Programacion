@@ -24,5 +24,5 @@ public class Ejercicio02 {
     for (int i = 0; i < 10; i++) {
       System.out.println("num["+ i + "]= " + caracter[i]);
     }
-  }// Observamos que no muestra nada cuando se inicializa.
+  }// Observamos que no muestra ningun carácter donde no lo definimos.
 }    

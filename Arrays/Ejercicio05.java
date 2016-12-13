@@ -13,7 +13,7 @@ public class Ejercicio05 {
     int maximo = Integer.MIN_VALUE;
     int minimo = Integer.MAX_VALUE; //consultar
     int i;
-    
+    System.out.println(Integer.MIN_VALUE);
     System.out.println("Introduzca 10 numeros enteros y pulse INTRO para poder seguir introduciendo.");
     System.out.println("El programa dirá cual de los valores que ha introducido es el máximo y el mínimo");
     
@@ -30,7 +30,7 @@ public class Ejercicio05 {
     }
     
     System.out.println();
-      
+/*
     for (i = 0; i < 10; i++) {
       System.out.print(numero[i]);
       if (numero[i] == maximo) {
@@ -41,6 +41,10 @@ public class Ejercicio05 {
         System.out.print(" mínimo");
       }
       System.out.println();
+       
     }
-  }
+    */
+  System.out.println("maximo: " + maximo);
+  System.out.println("minimo: " + minimo);
+   }
 }

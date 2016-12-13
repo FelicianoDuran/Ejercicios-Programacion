@@ -12,9 +12,7 @@
 public class Ejercicio04 {
 
   public static void main(String[] args) {
-    int[] numero = new int[20];
-    int[] cuadrado = new int[20];
-    int[] cubo = new int[20];
+    int[] numero = new int[20], cuadrado = new int[20], cubo = new int[20];
     int i;  
     for (i = 0; i < 20; i++) {
       numero[i] = (int)(Math.random()*101);
