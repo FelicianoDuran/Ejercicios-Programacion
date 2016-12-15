@@ -11,7 +11,7 @@ public class Ejercicio09 {
   int[] numeroIntroducido = new int[8];
   int i = 0;
   
-  System.out.prinln("Introduzca 8 números enteros para calcular cual es primo y cual no.");
+  System.out.prinln("Introduzca 8 números enteros para calcular cual es par y cual no.");
   
     for(int i = 0; i < 8 ; i++){
       numeroIntroducido[i] = Integer.parseInt(System.console().readLine());
