@@ -12,8 +12,8 @@
 public class Ejercicio14 {
   public static void main(String[] args) {
 
-    String[] color = {
-      "verde", "rojo", "azul", "amarillo", "naranja", "rosa", "negro ", "blanco", "morado"
+    String[] pieza = {
+      "dama", "torre", "alfil", "caballo", "peon"
     };
 
     String[] palabra = new String[8];
