@@ -17,7 +17,7 @@ public class Ejercicio13 {
     int negativos = 0;
     int positivos = 0;
     
-    int numeroIntroducido = Integer.parseInt(numero.nextLine());
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
     do {
       
       if(numeroIntroducido < 0) {
