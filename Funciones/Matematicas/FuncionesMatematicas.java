@@ -16,12 +16,12 @@ public class FuncionesMatematicas {
    * @return  número volteado (al revés)
    * 
    */
-  public static int voltea(int x) {
+  public static long voltea(long x) {
     if (x < 0) {
       return -voltea(-x);
     }
 
-    int volteado = 0;
+    long volteado = 0;
 
     while(x > 0) {
       volteado = (volteado * 10) + (x % 10);
@@ -92,7 +92,7 @@ public class FuncionesMatematicas {
    * @return resutado de elevar la base al exponente
    */
    
-    public static double potencia(int base, int exponente) {
+    public static double potencia(long base, long exponente) {
     if (exponente == 0) {
       return 1;
     }
@@ -101,9 +101,9 @@ public class FuncionesMatematicas {
       return 1/potencia(base, -exponente);
     }
 
-    int n = 1;
+    long n = 1;
 
-    for (int i = 0; i < Math.abs(exponente); i++) {
+    for (long i = 0; i < Math.abs(exponente); i++) {
       n = n * base;
     }
 
@@ -116,7 +116,7 @@ public class FuncionesMatematicas {
    * @param x número al que se le quieren contar los dígitos.
    * @return  número de dígitos que tiene el número.
    */
-  public static int digitos(int x) {
+  public static long digitos(long x) {
     if (x < 0) {
       x = -x;
     }
@@ -124,7 +124,7 @@ public class FuncionesMatematicas {
     if (x == 0) {
       return 1;
     } else {
-      int n = 0;
+      long n = 0;
       while (x > 0) {
         x = x / 10; // se va dividiendo entre 10 hasta que no se pueda mas
         n++; // n es el numero de digitos
@@ -143,7 +143,7 @@ public class FuncionesMatematicas {
    * @return devuelve la posición en el número 
    * 
    */
-  public static int digitoIzquierdo(int x, int n) {
+  public static long digitoIzquierdo(long x, int n) {
     
     n = n-1;
     
@@ -167,7 +167,7 @@ public class FuncionesMatematicas {
    * @return devuelve la posición en el número 
    * 
    */
-  public static int posicionDeDigito(int x, int n) {
+  public static long posicionDeDigito(long x, int n) {
     
     n = n-1;
     
@@ -213,18 +213,80 @@ public class FuncionesMatematicas {
    * @return Devuelve el numero con las posciones restadas.
    * 
    */
-  public static long quitaPorDetras(long x, int n) {
+  public static long quitaPorDelante(long x, int n) {
     
-    while(n-- > 0){
-      
-      x = x/10;
-    }
+    x = voltea(quitaPorDetras(voltea(x), n));
     
     return x;
   }
   
 
+    /**
+   * 
+   *  Añade un dígito a un número por delante.
+   * 
+   * @param x Numero entero introducido.
+   * @param n digito que se le va a añadir por la izquierda.
+   *
+   * @return Devuelve el numero con el dígito añadido.
+   * 
+   */
+  public static long pegaPorDelante(long x, int n) {
+    
+    return juntaNumeros(n, x);
+    
+  }
   
+  
+  /**
+   * Pega dos números para formar uno solo.
+   *
+   * @param x trozo que se pegará por la izquierda
+   * @param y trozo que se pegará por la derecha
+   * @return  número compuesto de los trozos <code>x</code> e <code>y</code>
+   */
+  public static long juntaNumeros(long x, long n) {
+    return (long)(x * potencia(10, digitos(n))) + n;
+  }
+  
+  
+   
+   /**
+   * 
+   *  Añade un dígito a un número por detrás.
+   * 
+   * @param x Numero entero introducido.
+   * @param n digito que se le va a añadir por la izquierda.
+   *
+   * @return Devuelve el numero con el dígito añadido.
+   * 
+   */
+  public static long pegaPorDetras(long x, int n) {
+    
+    return juntaNumeros(x, n);
+    
+  }
+  
+  
+  
+  /**
+   * Toma como parámetros las posiciones inicial y final dentro de un número y
+   * devuelve el trozo correspondiente.
+   * <p>
+   * Las posiciones se cuentan de izquierda a derecha comenzando por el cero.
+   *
+   * @param x      número entero
+   * @param inicio posición inicial
+   * @param fin    posición final
+   * @return       trozo de número compuesto por todos los dígitos que van desde
+   *               la posición inicial a la posición final incluyendo ambos
+   */
+  public static long trozoDeNumero(long x, int inicio, int fin) {
+    int longitud = (int)digitos(x);
+    x = quitaPorDelante(x, inicio);
+    x = quitaPorDetras(x, longitud - fin - 1);
+    return x;
+  }
   
   
 }
