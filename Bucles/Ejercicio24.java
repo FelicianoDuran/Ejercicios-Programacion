@@ -35,9 +35,6 @@ public class Ejercicio24 {
         System.out.print(i);
       }
       
-      for (i = altura; i > 0; i--) {
-        System.out.print(i);
-      }
       
       System.out.println();
       
