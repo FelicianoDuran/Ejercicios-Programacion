@@ -29,6 +29,16 @@ public class Caballo {
     return this.nombre;
     }
     
+    public String getSexo() {
+    return this.sexo;
+    }
     
+    public String getColor() {
+    return this.color;
+    }
+    
+    public void relincha() {
+    System.out.println("hiiiii hiiii ");
+    }
     
   }
